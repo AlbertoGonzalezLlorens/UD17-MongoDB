@@ -1,0 +1,8 @@
+use ejercicio5
+
+db.createCollection('Despachos')
+db.createCollection('Directores')
+
+db.Despachos.insertMany([{numero:0001,capacidad:5},{numero:0002,capacidad:1},{numero:0003,capacidad:10}])
+db.Directores.insertOne({dni:'39984258J',nombre:'Jaime Altozano Pasmo', despacho:ObjectId('6356662a235b93b052f19d5a')})
+db.Despachos.insertMany([{dni:'49884258L',nombre:'Ruben Pitagoras Comino',dni_jefe:ObjectId('635666ce235b93b052f19d5c'),despacho:ObjectId('6356662a235b93b052f19d5b')},{dni:'49884258L',nombre:'Carmen Maszo Urbano',dni_jefe:ObjectId('635666ce235b93b052f19d5c'),despacho:ObjectId('6356662a235b93b052f19d5b')}])

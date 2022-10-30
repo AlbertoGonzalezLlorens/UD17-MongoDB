@@ -1,0 +1,7 @@
+use ejercicio4
+
+db.createCollection('Peliculas')
+db.createCollection('Salas')
+
+db.Peliculas.insertMany([{codigo:0001,nombre:'Indiana Jones',edad:7},{codigo:0002,nombre:'Alien',edad:18},{codigo:0003,nombre:'James Bond',edad:15}])
+db.Cajas.insertMany([{codigo:1111,nombre:'sala 1',pelicula:ObjectId('635663d2235b93b052f19d53')},{codigo:1112,nombre:'sala 2',pelicula:ObjectId('635663d2235b93b052f19d53')},{codigo:1113,nombre:'sala 3',pelicula:ObjectId('635663d2235b93b052f19d55')}])

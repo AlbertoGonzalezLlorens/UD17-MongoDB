@@ -1,0 +1,7 @@
+use ejercicio3
+
+db.createCollection('Almacenes')
+db.createCollection('Cajas')
+
+db.Almacenes.insertMany([{codigo:0001,lugar:'Riudoms',capacidad:20000},{codigo:0002,lugar:'Santander',capacidad:50000},{codigo:0003,lugar:'Jaen',capacidad:13000}])
+db.Cajas.insertMany([{numero_referencia:'A0A1',contenido:'comics',valor:60,almacen:ObjectId('635661c4235b93b052f19d4d')},{numero_referencia:'A0A2',contenido:'cartuchos',valor:30,almacen:ObjectId('635661c4235b93b052f19d4e')},{numero_referencia:'A0A3',contenido:'zapatos',valor:120,almacen:ObjectId('635661c4235b93b052f19d4f')}])

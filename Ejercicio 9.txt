@@ -1,0 +1,10 @@
+use ejercicio9
+
+db.createCollection('Cientificos')
+db.createCollection('Proyecto')
+db.createCollection('Asignado_A')
+db.Cientificos.insertMany([{dni:'11111111A',nombreapels:'Investigador 1'},{dni:'22222222B',nombreapels:'Investigador 2'},{dni:'33333333C',nombreapels:'Investigador 3'}])
+db.Proyecto.insertMany([{id:'AAA1',nombre:'Proyecto 1',horas:10},{id:'AAA2',nombre:'Proyecto 2',horas:20},{id:'AAA3',nombre:'Proyecto 3',horas:30}])
+db.Asignado_A.insertMany([{cientifico:ObjectId('635d7e4a714b20105f6a78e6'),proyecto:ObjectId('635ed506da7049473bfc1aca')},{cientifico:ObjectId('635d7e4a714b20105f6a78e7'),proyecto:ObjectId('635ed506da7049473bfc1aca')},{cientifico:ObjectId('635d7e4a714b20105f6a78e8'),proyecto:ObjectId('635ed506da7049473bfc1acb')}])
+
+

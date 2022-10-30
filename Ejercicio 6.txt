@@ -1,0 +1,9 @@
+use ejercicio6
+
+db.createCollection('Piezas')
+db.createCollection('Proveedores')
+db.createCollection('Suministra')
+
+db.Piezas.insertMany([{codigo:0001,nombre:'Pieza 1'},{codigo:0002,nombre:'Pieza 2'},{codigo:0003,nombre:'Pieza 3'}])
+db.Proveedores.insertMany([{id:'0001',nombre:'Proveedor 1'},{id:'0002',nombre:'Proveedor 2'},{id:'0003',nombre:'Proveedor 3'}])
+db.Suministra.insertMany([{codigo_pieza:ObjectId('63566889235b93b052f19d5f'),id_proveedor:ObjectId('635668ef235b93b052f19d62'),precio:25},{codigo_pieza:ObjectId('63566889235b93b052f19d5f'),id_proveedor:ObjectId('635668ef235b93b052f19d62'),precio:52},{codigo_pieza:ObjectId('63566889235b93b052f19d5f'),id_proveedor:ObjectId('635668ef235b93b052f19d62'),precio:7}])

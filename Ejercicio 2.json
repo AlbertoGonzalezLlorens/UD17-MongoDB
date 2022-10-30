@@ -1,0 +1,7 @@
+use ejercicio2
+
+db.createCollection('Departamentos')
+db.createCollection('Empleados')
+
+db.Departamentos.insertMany([{codigo:0001,nombre:'Recursos Humanos',presupuesto:20000},{codigo:0002,nombre:'Ingenieria',presupuesto:50000},{codigo:0003,nombre:'Administración',presupuesto:13000}])
+db.Empleados.insertMany([{dni:'39984258J',nombre:'Jaime',apellidos:'Altozano Pasmo',departamento:ObjectId('63565a3f235b93b052f19d47')},{dni:'49884258L',nombre:'Ruben',apellidos:'Pitagoras Comino',departamento:ObjectId('63565a3f235b93b052f19d48')},{dni:'31284258K',nombre:'Carmen',apellidos:'Maszo Urbano',departamento:ObjectId('63565a3f235b93b052f19d49')}])

@@ -1,0 +1,7 @@
+use ejercicio1
+
+db.createCollection('Fabricantes')
+db.createCollection('Articulos')
+db.Fabricantes.insertMany([{codigo:1111,nombre:'Asus'},{codigo:1112,nombre:'Hp'},{codigo:1113,nombre:'Acer'}]);
+db.Articulos.insertMany([{codigo:0001,nombre:'Portatil 1, i7',precio:658.87,fabricante:ObjectId('63565558235b93b052f19d41')}])
+db.Articulos.insertMany([{codigo:0002,nombre:'Portatil 2, i5',precio:485.56,fabricante:ObjectId('63565558235b93b052f19d42')},{codigo:0003,nombre:'Portatil 3, i7',precio:1032,fabricante:ObjectId('63565558235b93b052f19d43')}])
